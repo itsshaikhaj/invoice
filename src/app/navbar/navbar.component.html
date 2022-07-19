@@ -1,0 +1,31 @@
+<mat-sidenav-container class="sidenav-container" style="background-color: #F8F8FF;">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>InVoices</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/users']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Users</a>
+      <a mat-list-item [routerLink]="['/customers']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Customers</a>
+      <!-- <a mat-list-item [routerLink]="['/videos']" [routerLinkActive]="['active']" [ngClass]="{'li-bg':handleActiveClass()}" [routerLinkActiveOptions]="{exact: true}">Videos</a>
+      <a mat-list-item [routerLink]="['/users']" [routerLinkActive]="['active']" [ngClass]="{'li-bg':handleActiveClassUsers()}" [routerLinkActiveOptions]="{exact: true}">User</a> -->
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar >
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon" style="color: #273469;">menu</mat-icon>
+      </button>
+     
+      <!-- <button style="margin: 10px;font-size: 16px;background: #273469;color:white;border:none;width: 6rem;border-radius: 10px;">Log Out</button> -->
+      
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet> 
+  </mat-sidenav-content>
+</mat-sidenav-container>

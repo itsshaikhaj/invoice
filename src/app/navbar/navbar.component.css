@@ -1,0 +1,84 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.mat-toolbar-single-row {
+  height: 64px;
+}
+
+.sidenav {
+  width: 200px;
+  background: #ffffff;
+  color: white;
+}
+
+.sidenav .mat-toolbar {
+  /* background: #ffffff; */
+  background: #e4e5ea;
+  color: #273469;
+  letter-spacing: 10px;
+  /* border-style: inset; */
+  font-variant: small-caps;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar {
+  /* background: #ffffff; */
+  background: #e4e5ea;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: unset !important; 
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+}
+
+li {
+  margin: 10px;
+}
+
+.active {
+  background: #273469;
+  color: white !important;
+  text-decoration: underline;
+}
+
+a {
+  background: #FAFAFF;
+  margin: 10px;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 90% !important;
+}
+
+.mat-list-base .mat-list-item {
+  color:black;
+}
+
+.mat-list-option:hover, .mat-list-option:focus, .mat-nav-list .mat-list-item:hover, .mat-nav-list .mat-list-item:focus, .mat-action-list .mat-list-item:hover, .mat-action-list .mat-list-item:focus {
+  background: #273469 !important;
+  color: white !important;
+}
+
+.mat-list-option:hover, .mat-list-option:focus, .mat-nav-list .mat-list-item:hover, .mat-nav-list .mat-list-item:focus, .mat-action-list .mat-list-item:hover, .mat-action-list .mat-list-item:focus {
+  background: #273469;
+  color: white !important;
+
+}
+
+.li-bg {
+  background: #273469;
+  color: white !important;
+  text-decoration: underline;
+}

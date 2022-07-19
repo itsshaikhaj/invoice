@@ -1,0 +1,70 @@
+
+  <!-- <div class="row">
+
+    <div class="col-8">
+        <div style="margin:15px;text-align: start;">
+        <h4 style="color: dimgrey;margin: 10px;">Categories</h4>
+        </div>
+    </div>
+    <div class="col-4">
+      <div style="text-align: end;">
+        <button class="btn btn-primary" (click)="openDialog({}, 'add')">Add Category</button>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div style="margin:15px;text-align: start;">
+      <h4></h4>
+      </div>
+  </div>
+    <div class="col-4">
+      <div style="margin:10px;text-align: end;">
+        <input type="search" class="search" name="" id="" placeholder="Search">
+      </div>
+    </div>
+  </div> -->
+
+<div class="table-responsive" style="margin: 10px;">
+    <table class="table table-bordered table-hover table-striped" id="dtBasicExample">
+        <thead>
+            <tr>
+                <!-- <th scope="col">
+                    <mat-checkbox (change)="$event ? masterToggle() : null"
+                        [checked]="selection.hasValue() && isAllSelected()"
+                        [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()">
+                    </mat-checkbox>
+                </th> -->
+                <th scope="col">Sr No.</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Total Amount</th>
+                <!-- <th scope="col">Action</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of userList; let i = index;" >
+            <!-- <tr *ngFor="let item of videosList" > -->
+                <!-- <td>
+                    <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(item) : null"
+                        [checked]="selection.isSelected(item)" [aria-label]="checkboxLabel(item)">
+                    </mat-checkbox>
+                </td> -->
+                <td>{{ i + 1}}</td>
+                <td>{{ item?.user_name ? item?.user_name : '-'}}</td>
+                <td>{{ item?.Customer_name ? item?.Customer_name : '-'}}</td>
+                <td>{{ item?.total_amount ? item?.total_amount : '-'}}</td>
+                <!-- <td>
+                    <button class="btn-custom btn-outline-success" style="background-color: #218838;border-color: #1e7e34;" >Edit</button>
+                    <button class="btn-custom btn-outline-danger" style="background-color: #dc3545;border-color: #dc3545;" >Delete</button>
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('#dtBasicExample').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+  });
+</script>

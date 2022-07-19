@@ -1,0 +1,91 @@
+table {
+    width: 100%;
+  }
+
+  th, td {
+    text-align: start;
+  }
+
+  .btn {
+    margin: 10px;
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid #30343F;
+    background: #f0f1f7;
+  }
+
+  th, td {
+    text-align: start;
+  }
+
+  .btn {
+    margin: 10px;
+  }
+
+  mat-slide-toggle {
+    margin: 8px 0;
+    display: block;
+  }
+
+  .mat-column-select {
+    overflow: initial;
+  }
+
+  video {
+    border: 1px solid grey;
+    border-radius: 10px;
+    /* width: 100%; */
+
+}
+
+.btn-primary {
+  background: #273469;
+  color:white;
+  border-color:  #273469;
+  box-shadow: none;
+}
+
+table thead {
+  background: #273469;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+th {
+  font-weight: 500;
+}
+
+
+.table>:not(:first-child) {
+  border-top: 2px solid #273469;
+}
+
+  .mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background {
+   background:#273469;
+  }
+
+  .btn-custom  {
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 6em;
+    height: 2em;
+    color: white;
+}
+
+.search {
+  border-radius: 10px;
+  border-color: #273469;
+  padding: 10px;
+  outline: #273469;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #30343F !important;
+}
+
+.table>tbody {
+  vertical-align: middle;
+}
