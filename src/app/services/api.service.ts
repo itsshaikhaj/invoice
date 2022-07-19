@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 })
 export class ApiService {
 
-  url = 'https://freeinvoice.rajnikantmanani.in/';
+  url = 'localhost:3000/';
   constructor(
     public http: HttpClient,
   ) { }
